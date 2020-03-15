@@ -8,12 +8,16 @@
 
 #include <iostream>
 
-enum Type {
-    pointer, reference
+enum class Type {
+    pointer = 25, reference
 };
 union Value{
     int a;
     int b;
+};
+
+enum Color{
+    red = 100, blue, green
 };
 
 struct Entry{
@@ -27,15 +31,22 @@ struct Entry{
     };
     
     void f(Entry* e){
-        if(e->t == pointer)
+        if(e->t == Type::pointer)
             std::cout << "Pointer: " << e->v.a << std::endl;
-        if(e->t == reference)
+        if(e->t == Type::reference)
             std::cout << "Reference: " << e->v.b <<std::endl;
     }
 };
 
 int main(int argc, const char * argv[]) {
-    Entry e{reference, 4, 5};
+    Entry e{Type::reference, 4, 5};
     e.f(&e);
+
+    Type t = Type::pointer;
+    std::cout << static_cast<int>(t) << std::endl;
+    
+    std::cout << Color::red << std::endl;
+
+    
     return 0;
 }
