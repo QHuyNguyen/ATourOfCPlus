@@ -7,8 +7,12 @@
 //
 
 #include "Vector.hpp"
+#include <stdexcept>
 
 Vector::Vector(int s) : elem{new double[s]}, sz{s}{
+    if(s < 0)
+        throw std::length_error{"S value is negative"};
+    
     for(int i = 0; i < s; i++){
         elem[i] = i;
     }

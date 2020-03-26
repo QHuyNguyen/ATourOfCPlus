@@ -21,8 +21,15 @@ double square_sum(Vector& v){
 }
 
 int main(int argc, const char * argv[]) {
-    Vector v(5);
-    std::cout << square_sum(v) << std::endl;
+    
+    try{
+        Vector v(-5);
+        std::cout << square_sum(v) << std::endl;
+
+    }
+    catch(std::length_error& err){
+        std::cerr << "test failed";
+    }
     
     return 0;
 }
