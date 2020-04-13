@@ -13,6 +13,7 @@ class Vector{
 private:
     double* elem;
     int sz;
+    
 public:
     Vector(int i) : elem{new double[i]}, sz{i}{
         for(int a = 0; a < i; a++){

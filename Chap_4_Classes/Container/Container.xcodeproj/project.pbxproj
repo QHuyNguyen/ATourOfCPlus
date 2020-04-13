@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AB240F6824449247004287E8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB240F6724449247004287E8 /* main.cpp */; };
 		AB240F72244492A8004287E8 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB240F71244492A8004287E8 /* Vector.cpp */; };
+		AB240F74244499B2004287E8 /* Container.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB240F73244499B2004287E8 /* Container.cpp */; };
+		AB240F7624449AF9004287E8 /* Vector_container.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB240F7524449AF9004287E8 /* Vector_container.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		AB240F6424449247004287E8 /* Container */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Container; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB240F6724449247004287E8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AB240F71244492A8004287E8 /* Vector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		AB240F73244499B2004287E8 /* Container.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Container.cpp; sourceTree = "<group>"; };
+		AB240F7524449AF9004287E8 /* Vector_container.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector_container.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			children = (
 				AB240F6724449247004287E8 /* main.cpp */,
 				AB240F71244492A8004287E8 /* Vector.cpp */,
+				AB240F73244499B2004287E8 /* Container.cpp */,
+				AB240F7524449AF9004287E8 /* Vector_container.cpp */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -122,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB240F74244499B2004287E8 /* Container.cpp in Sources */,
 				AB240F72244492A8004287E8 /* Vector.cpp in Sources */,
+				AB240F7624449AF9004287E8 /* Vector_container.cpp in Sources */,
 				AB240F6824449247004287E8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
